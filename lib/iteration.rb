@@ -35,13 +35,13 @@ def total_even_pairs(src)
   # As a reminder any number % 2 will return 0 or 1. If the result is 0, then
   # the number was even. Review the operator documentation if you've forgotten
   # this!
-  new_array = []
+  result = 0 
   i = 0 
   while i < src.length do 
     if src[i][0] %2 == 0 && src[i][1]  %2 == 0 
-      new_array << src[i][0] + src[i][1]
+      result += src[i][0] + src[i][1]
     end 
      i += 1 
    end
-   new_array.sum
+  result
 end
